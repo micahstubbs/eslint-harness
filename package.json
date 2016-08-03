@@ -6,7 +6,7 @@
   "scripts": {
     "prepublish": "rm -rf build && mkdir build && rollup --banner \"$(preamble)\" -f umd -g d3:d3 -n d3 -o build/bundle.js -- index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint index.js src"
+    "lint": "eslint index.js src --fix"
   },
   "repository": {
     "type": "git",
